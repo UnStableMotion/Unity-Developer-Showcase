@@ -1,0 +1,78 @@
+# Unity-generated directories
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Pp]roject[Ss]ettings/
+[Pp]ackages/
+[Mm]emoryCaptures/
+[Rr]ecordings/
+
+# Build output and Unity packages
+[Bb]uild/
+[Bb]uilds/
+*.apk
+*.aab
+*.unitypackage
+
+# Large Unity asset and source formats
+*.psd
+*.psb
+*.tga
+*.tif
+*.tiff
+*.exr
+*.blend
+*.fbx
+*.obj
+*.wav
+*.mp3
+
+# IDE and editor metadata
+.vs/
+.idea/
+.fleet/
+.vscode/
+*.csproj
+*.sln
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# Operating-system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Secrets, credentials, signing, and service configuration
+.env
+.env.*
+!.env.example
+*.keystore
+*.jks
+*.p12
+*.pfx
+*.pem
+*.key
+google-services.json
+GoogleService-Info.plist
+*service-account*.json
+credentials*.json
+secrets*.json
+
+# Local archives and temporary files
+*.zip
+*.7z
+*.rar
+*.tmp
+*.bak
+*.log
