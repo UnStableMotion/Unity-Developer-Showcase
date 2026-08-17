@@ -14,7 +14,7 @@ This repository is a focused portfolio case study. It contains selected source f
 
 ## Gameplay
 
-**[Watch the gameplay loop (MP4, 13 seconds)](Excavate/Media/Excavate_CoreGameplay.mp4)**
+![Excavate gameplay loop](Excavate/Media/Excavate_CoreGameplay.gif)
 
 The player clears destructible objects, receives materials, and spends those materials on tool upgrades. Better tool stats allow faster clearing, wider swings, and access to objects with higher tool-level requirements.
 
@@ -26,7 +26,7 @@ Dense gameplay areas can contain roughly 5,000 interactive objects. Keeping ever
 
 At startup, `ChunkObject` components are collected and grouped by integer chunk coordinates. `ChunkManager` stores those groups in a `Dictionary<Vector2Int, Chunk>` and tracks the required active coordinates with a `HashSet<Vector2Int>`. When the player enters a new chunk, the manager compares the previous and required sets, then queues objects for activation or deactivation. Configurable per-frame limits spread that work across frames instead of switching an entire area at once. Additional sets prevent duplicate queue entries, while the target-state lookup handles objects whose requested state changes before their queued operation is processed.
 
-**[Watch chunk activation and deactivation (MP4, 27 seconds)](Excavate/Media/Excavate_ChunkSystem.mp4)**
+![Chunk activation and deactivation in Unity](Excavate/Media/Excavate_ChunkSystem.gif)
 
 Code: [ChunkManager.cs](Excavate/Code/World/ChunkManager.cs) · [ChunkObject.cs](Excavate/Code/World/ChunkObject.cs)
 
@@ -46,7 +46,7 @@ Code: [AttackPivot.cs](Excavate/Code/Mining/AttackPivot.cs) · [ToolDamage.cs](E
 
 `ResourceManager` owns the material balance, updates its UI counter, and exposes a guarded spend operation. `UpgradesManager` uses serialized level data to price and apply upgrades for swing speed, mining angle, and tool hardness. These upgrades feed back into `AttackPivot` and `ToolDamage`, connecting progression directly to mining behavior and access requirements.
 
-**[Watch progression and tool requirements (MP4, 15 seconds)](Excavate/Media/Excavate_Upgrades.mp4)**
+![Excavate progression and tool requirements](Excavate/Media/Excavate_Upgrades.gif)
 
 Code: [ResourceManager.cs](Excavate/Code/Progression/ResourceManager.cs) · [UpgradesManager.cs](Excavate/Code/Progression/UpgradesManager.cs)
 
@@ -56,7 +56,7 @@ The project is designed for Android and was profiled directly on an Android devi
 
 After that work, the tested Android build reached and held the 60 FPS target during the steady-state portions of the recorded scenario. The trace also shows short transient spikes, so this result is specific to the demonstrated device, build, and gameplay conditions—not a guarantee for every Android device or every game state. The chunk system is presented as a separate world-management solution and is not claimed as the sole cause of the final frame rate.
 
-**[Watch the Android profiling capture (MP4, 21 seconds)](Excavate/Media/Excavate_Performance_60FPS.mp4)**
+![Android performance profiling in Unity](Excavate/Media/Excavate_Performance_60FPS.gif)
 
 ## Selected Code
 
