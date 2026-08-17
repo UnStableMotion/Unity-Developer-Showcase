@@ -66,9 +66,9 @@ After that work, the tested Android build reached and held the 60 FPS target dur
 | Mining / destruction | [AttackPivot.cs](Excavate/Code/Mining/AttackPivot.cs), [ToolDamage.cs](Excavate/Code/Mining/ToolDamage.cs), [DestructibleObject.cs](Excavate/Code/Mining/DestructibleObject.cs) | Coroutine-driven attacks, trigger interaction, tool requirements, damage and rewards |
 | Resources / progression | [ResourceManager.cs](Excavate/Code/Progression/ResourceManager.cs), [UpgradesManager.cs](Excavate/Code/Progression/UpgradesManager.cs) | Resource transactions, serialized upgrade data, UI updates and gameplay stat changes |
 
-## AI-Assisted Development
+## Code Authorship
 
-**All code samples included in this showcase were authored by me:**
+All seven C# code samples included in this showcase were designed and implemented by me:
 
 - `ChunkManager.cs`
 - `ChunkObject.cs`
@@ -78,16 +78,24 @@ After that work, the tested Android build reached and held the 60 FPS target dur
 - `ResourceManager.cs`
 - `UpgradesManager.cs`
 
-For the chunk system, I used an architectural concept suggested during an AI discussion, but I wrote the implementation and its data structures myself rather than copying generated code.
+These files represent my personal work on gameplay systems, world management, progression, and mobile-oriented development.
 
-The AI-assisted parts of my wider development workflow include:
+## Use of AI
 
-- all custom Unity Editor tools, including the fully AI-generated Scatter Tool;
-- creation and iteration of 3D assets;
-- creation and iteration of textures and materials;
-- experiments, debugging, and technical analysis.
+I used AI primarily to accelerate visual prototyping and content production for Excavate!, including:
 
-Editor-tool source code is not presented as my authored code sample in this repository. I review AI-assisted output before using it and remain responsible for its integration and behavior in the project. More detail is available in [Authorship Notes](Excavate/Docs/AUTHORSHIP.md).
+- 3D asset iteration;
+- textures and materials;
+- visual experimentation;
+- supporting Unity Editor tools.
+
+This allowed me to validate gameplay ideas faster and focus more of my development time on programming, system design, and performance work—the areas I am most interested in developing professionally.
+
+For the chunk system, AI was used only to discuss a high-level architectural direction. I selected the data structures and wrote the implementation myself.
+
+The Scatter Tool was fully AI-generated and is not included as an authored code sample. AI-assisted content was reviewed and integrated by me as part of the wider development workflow.
+
+More details are available in [Authorship Notes](Excavate/Docs/AUTHORSHIP.md).
 
 ## Tech Stack
 
